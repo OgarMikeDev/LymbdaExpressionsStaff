@@ -11,9 +11,10 @@ public class Main {
 
     public static void main(String[] args) {
         ArrayList<Employee> listEmployees = loadStaffFromFile();
+        System.out.println("All employees: ");
         listEmployees.forEach(System.out::println);
         topSalaryEmployees = getTopSalaryEmployees(listEmployees);
-        System.out.println("Top 5 salary employees: ");
+        System.out.println("\nTop 5 salary employees: ");
         topSalaryEmployees.forEach(System.out::println);
     }
 
